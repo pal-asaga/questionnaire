@@ -7,16 +7,16 @@ import { collection, onSnapshot } from 'firebase/firestore';
 export default function Home() {
 
   const onSubmit = (e) => {
-    // console.log(e)
-    // console.log(e.name, e.dateofbirth, e.radio1, e.radio2, e.language)
-    const db = firebase.firestore().collection("questionnaire")
-      .add({
-        name: e.name,
-        dateofbirth: e.dateofbirth,
-        radio1: e.radio1,
-        radio2: e.radio2,
-        language: e.language
-      })
+    console.log(e)
+    console.log(e.name, e.dateofbirth, e.radio1, e.radio2, e.language)
+    // const db = firebase.firestore().collection("questionnaire")
+    //   .add({
+    //     name: e.name,
+    //     dateofbirth: e.dateofbirth,
+    //     radio1: e.radio1,
+    //     radio2: e.radio2,
+    //     language: e.language
+    //   })
   }
 
   const [isPublished, setIsPublished] = useState(false)
