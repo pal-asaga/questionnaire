@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { Container, Input, TextField } from "@mui/material"
 import firebase from "./config/firebase"
 import { collection, onSnapshot } from 'firebase/firestore';
+import { AppProps } from "next/app";
 
 export default function Home() {
 
